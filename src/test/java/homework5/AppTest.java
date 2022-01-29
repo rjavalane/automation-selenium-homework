@@ -102,7 +102,7 @@ public class AppTest {
         driver.findElement(By.cssSelector("#wag-body-main-container > section > section > section > section:nth-child(2) > section > span > a")).click();
     }
     @Test
-    public void test7() throws InterruptedException { //testing the accessibility of the sub menu "shop products dropdown"
+    public void test7() throws InterruptedException { //testing the accessibility of the sub menu "coupons"
         driver.findElement(By.cssSelector("body > header > div.nav__wrapper-test.testing > nav > div > div > div.dropdown.dropdown__menu > a > span > span")).click();
         driver.findElement(By.cssSelector("#menu-Coupons > a > span:nth-child(2)")).click();
     }
@@ -127,6 +127,7 @@ public class AppTest {
 
     @AfterMethod
     public void afterMethod(){
+
         driver.close();
     }
 
